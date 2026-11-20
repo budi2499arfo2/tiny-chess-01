@@ -1,4 +1,5 @@
 import json,os,sys,urllib.request,urllib.error as U
+# Engine for tiny-chess-01 competition: alpha-beta search, depth 3, material evaluation
 E=os.environ["MAKEFUN_ENV_URL"]
 H={"content-type":"application/json"}
 def R(p,b):
