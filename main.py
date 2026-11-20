@@ -1,5 +1,4 @@
 import json,os,sys,urllib.request,urllib.error as U
-# Engine for tiny-chess-01 competition: alpha-beta search, depth 3, material evaluation
 E=os.environ["MAKEFUN_ENV_URL"]
 H={"content-type":"application/json"}
 def R(p,b):
@@ -136,6 +135,8 @@ def nm(b,st,t,d,a,b2):
   b[:]=ob;st[:]=ost
   if sc>bs:bs=sc;bm=m
  return bs,bm
+def toUCI(m):
+ s,x,pr=m;f="abcdefgh";return f[s%16]+str(s//16+1)+f[x%16]+str(x//16+1)+{1:"n",2:"b",3:"r",4:"q"}.get(pr,"")
 while 1:
  g=R("/game",{})
  if g["status"]=="done":break
@@ -146,7 +147,5 @@ while 1:
    if sc==-100000+d:continue
    if bm2:bm=bm2;break
   if bm is None:ms=gl(b,turn,e);bm=ms[0] if ms else None
-  if bm is None:print("e2e4")
-  else:
-   s,x,pr=bm;f="abcdefgh"
-   print(f[s%16]+str(s//16+1)+f[x%16]+str(x//16+1)+{1:"N",2:"B",3:"R",4:"Q"}.get(pr,""))
+  if bm is None:R("/resign",{"game":g["game"]})
+  else:R("/move",{"game":g["game"],"move":toUCI(bm)})
