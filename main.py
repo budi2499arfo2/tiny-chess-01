@@ -114,7 +114,7 @@ def ev(b,t):
  return sc if t else -sc
 def nm(b,st,t,d,a,b2):
  if d<=0:return ev(b,t),None
- mv=gl(b,turn,st[2])
+ mv=gl(b,t,st[2])
  if not mv:
   k="K" if t else "k";km=-1
   for s in A:
